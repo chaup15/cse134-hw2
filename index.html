@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
+    <title>Home</title>
 </head>
 <body>
     <header>
@@ -17,13 +17,14 @@
             </ul>
         </nav>
     </header>
+    <!-- header is the same for the rest of the pages -->
     <main>
         <section id="intro">
+            <audio controls src="media/welcome.mp3"></audio>
             <hgroup>
                 <h1>
                     Welcome! 
                 </h1>
-                <audio controls src="media/welcome.mp3"></audio>
                 <p>My name is <strong>Chau</strong> and I am a senior at University of California San Diego studying <strong>Computer Science</strong>.</p>
             </hgroup>
         </section>
@@ -31,27 +32,28 @@
             <h3>About me:</h3>
             <p>I am passionate about software development and enjoy working on projects that challenge me to think outside the box. I am always looking for opportunities to learn new technologies and improve my coding skills.</p>
             <h4>Hobbies:</h4>
-            <li>Drawing</li>
-            <li>Watching shows</li>
-            <li>Walking</li>
+            <ul>
+                <li>Drawing</li>
+                <li>Watching shows</li>
+                <li>Walking</li>
+            </ul>
         </section>
-        <section id="dialog">
-            <dialog open>
-                <p>Here is an inspiring quote of the day by a computer science pioneer</p>
-                <figure>
-                    <blockquote>
-                    <p>"If debugging is the process of removing software bugs, then programming must be the process of putting them in."</p>
-                    </blockquote>
-                    <figcaption>
-                    - by <cite><a href="https://www.goodreads.com/author/quotes/1013817.Edsger_W_Dijkstra">Edsger W. Dijkstra</a></cite>
-                    </figcaption>
-                </figure>
-                <form method="dialog">
-                    <button>Close</button>
-                </form>
-            </dialog>
-        </section>
+        <dialog open>
+            <p>Here is an inspiring quote of the day by a computer science pioneer</p>
+            <figure>
+                <blockquote>
+                <p>"If debugging is the process of removing software bugs, then programming must be the process of putting them in."</p>
+                </blockquote>
+                <figcaption>
+                - by <cite><a href="https://www.goodreads.com/author/quotes/1013817.Edsger_W_Dijkstra">Edsger W. Dijkstra</a></cite>
+                </figcaption>
+            </figure>
+            <form method="dialog">
+                <button>Close</button>
+            </form>
+        </dialog>
     </main>
+    <!-- footer is the same for the rest of the pages -->
     <footer>
         <hr>
         <p>&hearts; <i>Thank you for visiting!</i> &hearts;</p>
