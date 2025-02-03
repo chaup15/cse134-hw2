@@ -9,7 +9,8 @@
     <header>
         <nav>
             <ul>
-                <li><a href="index.html">Projects</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
                 <li><a href="skills.html">Skills</a></li>
                 <li><a href="education.html">Education</a></li>
                 <li><a href="contact.html">Contact</a></li>
@@ -17,11 +18,42 @@
         </nav>
     </header>
     <main>
-        <h2>Education</h2>
+        <section id="education">
+            <h2>Education</h2>
+            <div id="edu-img">
+                <picture>
+                    <source srcset="media/ucsd-logo.webp" type="image/webp">
+                    <img src="media/ucsd-logo.png" alt="UCSD Logo" width="150" height="150">
+                </picture>
+                <picture id="geisel" style="display:none;">
+                    <source srcset="media/geisel.webp" type="image/webp">
+                    <img src="media/geisel.jpeg" alt="Geisel library at UCSD" width="220" height="150" >
+                </picture>
+                <canvas id="myCanvas" width="150" height="150" style="border:1px solid black;">
+                    Sorry, your browser does not support canvas.
+                </canvas>
+            </div>
+            
+            <div id="edu-info">
+                <p><b>University of California, San Diego</b></p>
+                <p><b>Major</b>: Computer Science</p>
+                <p><b>Year</b>: Senior</p>
+                <p><b>GPA</b>: 3.8</p>
+            </div>
+        </section>
     </main>
     <footer>
         <hr>
-        <p>&hearts; Thank you for visiting! &hearts;</p>
+        <p>&hearts; <i>Thank you for visiting!</i> &hearts;</p>
     </footer>
+    <script>
+        const canvas = document.getElementById("myCanvas");
+        const ctx = canvas.getContext("2d");
+        const image = document.getElementById("geisel");
+        
+        image.addEventListener("load", (e) => {
+          ctx.drawImage(image, 10, 10);
+        });
+        </script>
 
 </html>
