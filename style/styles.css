@@ -1,0 +1,61 @@
+:root {
+    --dark-blue: #053a5d;
+    --sky-blue: #87CEFA;
+    --lavender: #E6E6FA;
+    --light-blue: 	#c0e7ff;
+    --primary-font: 'Optima', sans-serif;
+    --secondary-font: 'FreeMono', monospace;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--primary-font, Arial, sans-serif);
+    background-color: var(--light-blue, #ffffff);
+    color: black;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--secondary-font, Arial, sans-serif);
+    color: var(--dark-blue, #000000);
+}
+
+header {
+    background-color: var(--dark-blue, #000000);
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+    padding: 0;
+}
+
+nav ul li {
+    justify-content: center;
+    padding: 1em 1em;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 1.1em;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: var(--sky-blue, #ffffff);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    justify-items: center;
+    align-self: flex-end;
+    width: 100%;
+}

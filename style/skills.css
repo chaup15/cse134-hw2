@@ -1,0 +1,30 @@
+main ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0;
+}
+
+main ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2em;
+}
+
+svg {
+    width: 40%;
+    height: 70%;
+    transition: width 0.7s, height 0.7s;
+}
+
+svg:hover {
+    width: 50%;
+    height: 90%;
+}
+
+@media (max-width: 500px) {
+    main ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

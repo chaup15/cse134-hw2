@@ -1,0 +1,103 @@
+@import url('styles.css');
+
+form {
+    display: flex;
+    flex-flow: column wrap;
+    overflow: auto;
+    background-color: white;
+    width: 300px;
+    border-radius: 10px;
+    padding: 0.5em;
+    margin-top: 1em;
+    min-width: 10dvw;
+    max-width: 50dvw;
+    animation-name: slide-in;
+    animation-duration: 1s;
+}
+
+fieldset {
+    border: none;
+}
+
+label { 
+    font-weight:bold;
+    font-size: 1.1em;
+}
+
+legend {
+    font-size: 1.2em;
+    color: var(--dark-blue, #000000);
+    padding: 0.8em 0;
+    font-weight: bold;
+}
+
+input, textarea {
+    margin-bottom: 1.1em;
+    padding-right: 0;
+    width: 100%;
+    border: none;
+    background-color: var(--light-blue, #ffffff);
+    border-radius: 5px;
+    font-family: var(--secondary-font, Arial, sans-serif);
+    font-size: 0.9em;
+    height: 2em;
+    max-width: 50dvw;
+}
+
+textarea {
+    resize: vertical;
+    min-height:5dvh;
+    max-height:40dvh;
+}
+
+button {
+    border: none;
+    padding: 0.5em;
+    border-radius: 10px;
+    background-color: var(--dark-blue, #000000);
+    color: white;
+}
+
+aside {
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+aside:hover {
+    border:black solid 1px;
+    transform: scale(1.1);
+}
+
+aside h4{
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+@keyframes slide-in {
+    from {
+        translate: -70vw 0;
+        scale: 200% 1;
+    }
+
+    to {
+        translate: 0 0;
+        scale: 100% 1;
+    }
+}
+
+@media (max-width: 400px) {
+    form {
+        width: 95%;
+        max-width: 95%;
+    }
+    input, textarea {
+        width: 100%;
+        max-width: 100%;
+    }
+    textarea {
+        min-height:15dvh;
+    }
+}

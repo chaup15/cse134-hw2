@@ -1,0 +1,48 @@
+
+main {
+    overflow: auto;
+}
+ol {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 2.2rem;
+}
+
+#project {
+    display: flex;
+    flex-flow: column wrap;
+    align-self: center;
+    border-radius: 15px;
+    margin-bottom: 2rem;
+    background-color: white;
+    font-size: 1.2em;
+    width: 80%;
+    padding: 1.3em;
+    opacity: 0.8;
+    
+}
+
+#project:hover {
+    opacity: 1;
+    transform: scale(1.1) translateY(2%);
+}
+
+video {
+    display: flex;
+    justify-self: center;
+    width: 70%;
+}
+
+@media (max-width: 800px) {
+    video {
+        width: 100%;
+    }
+}
