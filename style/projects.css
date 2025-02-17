@@ -30,7 +30,7 @@ h1 {
     
 }
 
-#project:hover, #project:active {
+#project:hover, #project:active, #project:focus {
     opacity: 1;
     transform: scale(1.1) translateY(2%);
 }

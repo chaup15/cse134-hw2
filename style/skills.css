@@ -18,7 +18,7 @@ svg {
     transition: width 0.7s, height 0.7s;
 }
 
-svg:hover {
+svg:hover, svg:active, svg:focus {
     width: 50%;
     height: 90%;
 }
