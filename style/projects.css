@@ -16,7 +16,7 @@ h1 {
     font-size: 2.2rem;
 }
 
-#project {
+.project {
     display: flex;
     flex-flow: column wrap;
     align-self: center;
@@ -30,15 +30,22 @@ h1 {
     
 }
 
-#project:hover, #project:active, #project:focus {
+.project:hover, .project:active, .project:focus {
     opacity: 1;
     transform: scale(1.1) translateY(2%);
 }
 
 video {
     display: flex;
-    justify-self: center;
     width: 70%;
+    justify-self: center;
+}
+
+details {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    width: 100%;   
 }
 
 @media (max-width: 800px) {
