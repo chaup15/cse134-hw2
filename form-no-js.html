@@ -6,8 +6,6 @@
     <title>Contact</title>
     <link rel="stylesheet" href="style/styles.css">
     <link rel="stylesheet" href="style/contact.css">
-    <script src="script/dark_theme.js" defer></script>
-    <script src="script/contact.js" defer></script>
 </head>
 <body>
     <header>
@@ -20,35 +18,28 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-        <label class="toggle">
-            <input type="checkbox" id="toggle">
-            <span class="slider"></span>
-        </label>
     </header>
     <main>
         <address>
             You can contact me directly at <a href="mailto:c6pham@ucsd.edu">c6pham@ucsd.edu</a> or through this form:
         </address>
-        <form id="contact-form" action="https://httpbin.org/post" method="POST">
+        <form>
             <fieldset>
                 <legend>Contact Me</legend>
                 <label for="name">Full Name: <span class="required-indicator">*</span></label>
-                <input type="text" id="name" name="name" maxlength="30" required>
+                <input type="text" id="name" name="name" required>
 
                 <label for="email">Email: <span class="required-indicator">*</span></label>
                 <input type="email" id="email" name="email" required>
 
                 <label for="message">Message: <span class="required-indicator">*</span></label>
-                <textarea id="message" name="message" maxlength="200" required></textarea>
-                <div id="char-count"></div>
+                <textarea id="message" name="message" maxlength="500" required></textarea>
 
-                <input type="hidden" id="form-errors" name="form-errors">
-
-                <output id="error" class="output"></output>
-                <output id="info" class="output"></output>
-                
                 <button type="submit">Submit</button>
             </fieldset>
+
+            <output id="error-output" class="output"></output>
+            <output id="info-output" class="output"></output>
         </form>
         <aside>
             <h4>Quick Link</h4>
@@ -59,21 +50,5 @@
         <hr>
         <p>&hearts; <i>Thank you for visiting!</i> &hearts;</p>
     </footer>
-    <noscript>
-        <style>
-            .toggle {
-                display: none;
-            }
-            .noscript-message {
-                display: block;
-                color: red;
-                text-align: center;
-                margin-top: 10px;
-            }
-        </style>
-        <p class="noscript-message">
-            JavaScript is required to store theme selection.
-        </p>
-    </noscript>
 </body>
 </html>

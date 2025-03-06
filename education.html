@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Education</title>
     <link rel="stylesheet" href="style/styles.css">
+    <script src="script/dark_theme.js" defer></script>
 </head>
 <body>
     <header>
@@ -17,6 +18,10 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
+        <label class="toggle">
+            <input type="checkbox" id="toggle">
+            <span class="slider"></span>
+        </label>
     </header>
     <main>
         <h2>Education</h2>
@@ -45,6 +50,22 @@
         <hr>
         <p>&hearts; <i>Thank you for visiting!</i> &hearts;</p>
     </footer>
+    <noscript>
+        <style>
+            .toggle {
+                display: none;
+            }
+            .noscript-message {
+                display: block;
+                color: red;
+                text-align: center;
+                margin-top: 10px;
+            }
+        </style>
+        <p class="noscript-message">
+            JavaScript is required to store theme selection.
+        </p>
+    </noscript>
     <!-- <script>
         const canvas = document.getElementById("myCanvas");
         const ctx = canvas.getContext("2d");

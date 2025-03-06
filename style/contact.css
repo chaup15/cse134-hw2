@@ -5,54 +5,58 @@ form {
     flex-flow: column wrap;
     overflow: auto;
     background-color: white;
-    width: 300px;
+    width: 30dvw;
     border-radius: 10px;
     padding: 0.5em;
     margin-top: 1em;
     min-width: 10dvw;
-    max-width: 50dvw;
-    animation-name: slide-in;
-    animation-duration: 1s;
+    max-width: 40dvw;
+    /* animation-name: slide-in;
+    animation-duration: 1s; */
 }
 
 fieldset {
     border: none;
+    display: flex;
+    flex-flow: column wrap;
 }
 
 label { 
     font-weight:bold;
-    font-size: 1.1em;
+    font-size: 1.2em;
 }
 
 legend {
-    font-size: 1.2em;
+    font-size: 1.3em;
     color: var(--dark-blue, #000000);
     padding: 0.8em 0;
     font-weight: bold;
 }
 
 input, textarea {
-    margin-bottom: 1.1em;
+    margin: 0.5em 0;
     padding-right: 0;
     width: 100%;
     border: none;
-    background-color: var(--light-blue, #ffffff);
+    background-color: var(--background-color, #ffffff);
     border-radius: 5px;
     font-family: var(--secondary-font, Arial, sans-serif);
-    font-size: 0.9em;
+    font-size: 1em;
     height: 2em;
-    max-width: 50dvw;
+    max-width: 40dvw;
 }
 
 textarea {
     resize: vertical;
-    min-height:5dvh;
+    min-height:10dvh;
     max-height:40dvh;
 }
 
 button {
+    width: fit-content;
     border: none;
     padding: 0.5em;
+    margin-top: 0.5em;
     border-radius: 10px;
     background-color: var(--dark-blue, #000000);
     color: white;
@@ -76,6 +80,25 @@ aside h4{
     margin-bottom: 5px;
 }
 
+input:user-invalid,
+textarea:user-invalid {
+    border: 2px solid red;
+}
+
+.required-indicator {
+    color: rgb(255, 0, 85);
+}
+
+#error {
+    color: red;
+    font-weight: bold;
+}
+
+#char-count {
+    color: grey;
+    align-self: flex-end;
+}
+
 @keyframes slide-in {
     from {
         translate: -70vw 0;
@@ -88,7 +111,7 @@ aside h4{
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
     form {
         width: 95%;
         max-width: 95%;
