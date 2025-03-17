@@ -1,18 +1,32 @@
 @import url('styles.css');
 
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1em;
+}
+
 form {
     display: flex;
     flex-flow: column wrap;
     overflow: auto;
     background-color: white;
-    width: 30dvw;
+    width: 28dvw;
     border-radius: 10px;
     padding: 0.5em;
     margin-top: 1em;
+    margin-bottom: 1em;
     min-width: 10dvw;
     max-width: 40dvw;
     /* animation-name: slide-in;
     animation-duration: 1s; */
+}
+
+body.dark-theme form {
+    background-color: var(--headings-color, #000000);
+    color: var(--light-theme, #ffffff);
 }
 
 fieldset {
@@ -33,6 +47,10 @@ legend {
     font-weight: bold;
 }
 
+body.dark-theme label, body.dark-theme legend {
+    color: var(--light-theme, #ffffff);
+}
+
 input, textarea {
     margin: 0.5em 0;
     padding-right: 0;
@@ -48,7 +66,7 @@ input, textarea {
 
 textarea {
     resize: vertical;
-    min-height:10dvh;
+    min-height:15dvh;
     max-height:40dvh;
 }
 
@@ -58,26 +76,20 @@ button {
     padding: 0.5em;
     margin-top: 0.5em;
     border-radius: 10px;
-    background-color: var(--dark-blue, #000000);
+    background-color: var(--headings-color, #000000);
     color: white;
 }
 
-aside {
-    width: fit-content;
-    height: fit-content;
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 5px;
+button:hover {
+    background-color: var(--hover-color, rgb(0, 0, 85));
 }
 
-aside:hover {
-    border:black solid 1px;
-    transform: scale(1.1);
+body.dark-theme button {
+    background-color: var(--dark-hover-color, #000000);
 }
 
-aside h4{
-    margin-top: 0;
-    margin-bottom: 5px;
+body.dark-theme button:hover {
+    background-color: var(--hover-color, rgb(0, 0, 85));
 }
 
 input:user-invalid,

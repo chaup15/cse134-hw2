@@ -1,10 +1,13 @@
 :root {
-    --dark-blue: #053a5d;
-    --links-color: #87CEFA;
+    --headings-color: #053a5d;
+    --hover-color: #87CEFA;
     --background-color: #c0e7ff;
     --primary-font: 'Optima', sans-serif;
     --secondary-font: 'FreeMono', monospace;
-    --light-theme-slider: #ffef95;
+    --light-theme: #ffef95;
+    --dark-theme-header: #151e27;
+    --dark-theme-background: #0f1b2d;
+    --dark-hover-color: #012740;
 }
 
 body {
@@ -15,19 +18,30 @@ body {
     color: black;
 }
 
+body.dark-theme {
+    background-color: var(--dark-theme-background, #000000);
+    color: rgba(255, 255, 255, 0.85);
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--secondary-font, Arial, sans-serif);
-    color: var(--dark-blue, #000000);
+    color: var(--headings-color, #000000);
+}
+
+body.dark-theme h1, body.dark-theme h2, body.dark-theme h3, body.dark-theme h4, body.dark-theme h5, body.dark-theme h6 {
+    color: var(--light-theme, #ffffff);
 }
 
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: var(--dark-blue, #000000);
+    background-color: var(--headings-color, #000000);
     border-radius: 15px;
     margin-bottom: 20px;
 }
+
+
 
 nav {
     flex: 1;
@@ -54,8 +68,8 @@ nav ul li a {
     text-decoration: none;
 }
 
-nav ul li a:hover {
-    color: var(--links-color, #ffffff);
+a:hover {
+    color: var(--hover-color, #ffffff);
 }
 
 main {
@@ -85,7 +99,7 @@ footer {
 .slider {
     position: absolute;
     cursor: pointer;
-    background-color: var(--light-theme-slider, #ffffff);
+    background-color: var(--light-theme, #ffffff);
     border-radius: 24px;
     width: 100%;
     height: 100%;
@@ -99,18 +113,18 @@ footer {
     width: 20px;
     left: 2px;
     bottom: 2px;
-    background-color: var(--dark-blue, #000000);
+    background-color: var(--headings-color, #000000);
     border-radius: 50%;
     transition: 0.3s;
 }
 
 .toggle input:checked+.slider {
-    background-color: var(--dark-blue, #000000);
+    background-color: var(--headings-color, #000000);
 }
 
 .toggle input:checked+.slider::before {
     transform: translateX(26px);
-    background-color: var(--light-theme-slider, #ffffff);
+    background-color: var(--light-theme, #ffffff);
 }
 
 @media (max-width: 400px) {

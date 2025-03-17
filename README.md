@@ -1,0 +1,2 @@
+- I removed the comments which are tags that I used in HW2 but are not needed anymore for my personal portfolio
+- I centered the contact form because the form was initially on the left which makes the page look too empty and not balanced. I also moved the `Quick Link` content to the index page because I think it fits better with the home page than hanging at the bottom of the contact form.

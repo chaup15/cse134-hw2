@@ -22,14 +22,6 @@ function updateCharCount() {
     const remainingChars = maxChars - currLength;
     charCount.innerText = `${currLength}/${maxChars}`;
 
-    // if(remainingChars < 0) {
-    //     addError('message', 'You have exceeded the maximum character limit');
-    // } 
-    // else if (currLength == 0){
-    //     addError('message', 'Please add a message');
-    // } else {
-    //     error.innerText = '';
-    // }
     if(remainingChars < 0) {
         addError('message', 'You have exceeded the maximum character limit');
     } 

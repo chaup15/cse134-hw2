@@ -1,0 +1,25 @@
+{
+    "projects": [
+        {
+            "title": "PantryPal Application",
+            "image": "media/recipe.jpg",
+            "alt": "Image of a pancake and its ingredients",
+            "description": "App powered by ChatGPT AI to generate budget-friendly recipe using leftover ingredients.",
+            "link": "https://drive.google.com/file/d/1qwK_l3pbgpyL6aqvnsxiyNfYQy2ZniB9/view?usp=sharing"
+        },
+        {
+            "title": "Coffee Recipe Web Application",
+            "image": "media/coffee.jpg",
+            "alt": "Image of a cup of coffee",
+            "description": "This is a coffee recipe management web application",
+            "link": "https://www.youtube.com/watch?v=R2Cw1NZH7bc&ab_channel=StevenHsu"
+        },
+        {
+            "title": "CPython Source Code",
+            "image": "media/idle.jpg",
+            "alt": "Image of an IDLE editor with 2 windows",
+            "description": "Add split screen support for IDLE editor",
+            "link": "https://example.com/"
+        }
+    ]
+}

@@ -26,8 +26,12 @@ h1 {
     font-size: 1.2em;
     width: 80%;
     padding: 1.3em;
-    opacity: 0.8;
-    
+    opacity: 0.8;   
+}
+
+body.dark-theme .project {
+    background-color: var(--headings-color, #000000);
+    color: rgba(255, 255, 255, 0.85);
 }
 
 .project:hover, .project:active, .project:focus {

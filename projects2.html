@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>Projects</title>
     <link rel="stylesheet" href="style/styles.css">
-    <link rel="stylesheet" href="style/contact.css">
+    <link rel="stylesheet" href="style/projects.css">
+    <link rel="stylesheet" href="style/projects2.css">
     <script src="script/dark_theme.js" defer></script>
-    <script src="script/contact.js" defer></script>
+    <script src="script/projects.js" defer></script>
 </head>
 <body>
     <header>
@@ -26,30 +27,12 @@
         </label>
     </header>
     <main>
-        <address>
-            You can contact me directly at <a href="mailto:c6pham@ucsd.edu">c6pham@ucsd.edu</a> or through this form:
-        </address>
-        <form id="contact-form" action="https://httpbin.org/post" method="POST">
-            <fieldset>
-                <legend>Contact Me</legend>
-                <label for="name">Full Name: <span class="required-indicator">*</span></label>
-                <input type="text" id="name" name="name" maxlength="30" required>
-
-                <label for="email">Email: <span class="required-indicator">*</span></label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">Message: <span class="required-indicator">*</span></label>
-                <textarea id="message" name="message" maxlength="200" required></textarea>
-                <div id="char-count"></div>
-
-                <input type="hidden" id="form-errors" name="form-errors">
-
-                <output id="error" class="output"></output>
-                <output id="info" class="output"></output>
-                
-                <button type="submit">Submit</button>
-            </fieldset>
-        </form>
+        <div class="buttons">
+            <button id="local-button">Load Local</button>
+            <button id="remote-button">Load Remote</button>
+        </div>
+        <h1>My Projects</h1>
+        <div class="project-container"></div>
     </main>
     <footer>
         <hr>

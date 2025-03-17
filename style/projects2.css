@@ -1,0 +1,24 @@
+.project-container {
+    display: flex;
+    flex-direction: row;  
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;  
+    align-items: center; 
+}
+
+button {
+    width: fit-content;
+    border: none;
+    padding: 0.5em;
+    margin-top: 0.5em;
+    border-radius: 10px;
+    background-color: var(--headings-color, #000000);
+    color: white;
+    font-family: var(--primary-font, Arial, sans-serif);
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: var(--dark-hover-color, #000000);
+}
